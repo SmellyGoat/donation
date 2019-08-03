@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>login</title>
+<title>Login</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -11,18 +11,14 @@
 
 </head>
 <body background="../Pictures/background.png">
-<div class="text-center" style="background-color: pink;height: 150px; padding-top: 52px">
-    <!--logo-->
-    <img src="../Pictures/logo.png" width = "200" height="50" >
-</div>
 <div>
 	<nav class="navbar navbar-inverse" style="background-color:white;padding-top: 0px;border:0px">
 		<div class="container-fluid">
 		    <ul class="nav navbar-nav">
 		      <li><a href="Home.html" style ="color:black"><span class="glyphicon glyphicon-home"></span></span> Home</a></li>
 		 	  <li><a href="itemlist.html" style ="color:black"><span class="glyphicon glyphicon-tag"></span></span> Item list</a></li>
-		      <li><a href="#" style ="color:black"><span class="glyphicon glyphicon-gift"></span></span> Items in stock</a></li>
-		      <li><a href="#" style ="color:black"><span class="glyphicon glyphicon-shopping-cart"></span></span> Pickup Locations</a></li>
+		      <li><a href="instock.html" style ="color:black"><span class="glyphicon glyphicon-gift"></span></span> Items in stock</a></li>
+		      <li><a href="pickup.html" style ="color:black"><span class="glyphicon glyphicon-shopping-cart"></span></span> Pickup Locations</a></li>
 		    </ul>
 		    <form class="navbar-form navbar-left" action="/action_page.php">
 		      <div class="input-group">
@@ -36,34 +32,34 @@
 		    </form>
 		    <ul class="nav navbar-nav navbar-right" style="padding-right: 11px">
           	  <li><a href="about.html" style ="color:black"><span class="glyphicon glyphicon-info-sign"></span> About </a></li>
-		      <li><a href="#" style ="color:black"><span class="glyphicon glyphicon-user"></span> Sign Up </a></li>
+		      <li><a href="signup.html" style ="color:black"><span class="glyphicon glyphicon-user"></span> Sign Up </a></li>
 		      <li><a href="login.html" style ="color:black"><span class="glyphicon glyphicon-log-in"></span> Login </a></li>
 		    </ul>
 		</div>
 	</nav>
 </div>
 
-  <div class="box" style="margin-top:70px">
+<div class="box" style="margin-top:127px; background-color:#F5F5F5" >
 
     <h3 style="margin-left: 120px;margin-top: 40px"> Log In to Your Account </h3>
 
-    <input type="username" id="user" placeholder="Enter Username" name="uname" required>
+    <form action="auth" method="POST">
+
+	    <input type="username" id="user" placeholder="Enter Username" name="uname" required>
 
 
-    <input type="password" id="pass" placeholder="Enter Password" name="psw" required>
-        
-    
-    <div style="margin-left: 53px"> 
+	    <input type="password" id="pass" placeholder="Enter Password" name="psw" required>
+    </form>
+    <div style="margin-left: 53px;margin-bottom: 15px"> 
       <input type="checkbox" checked="checked" name="remember"> Remember me 
       <span class="psw"> Forgot <a href="#"> password?</a></span>
-
     </div>
 
-    <button id="login" type="submit" style="margin-left: 53px">Login</button>
+    <button id="login" type="submit" style="margin-left: 53px;margin-bottom: 20px">Login</button>
 
-  </div>
+    <h4.3 style="margin-left: 128px"> Don't have an account? <a href="signup.html"> Sign up now! </a></h4.3>
 
-  </div>
+</div>
 </form>
 <script type="text/Javascript" src="login.js"> </script>
 </body>
