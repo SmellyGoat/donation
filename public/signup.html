@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Signup</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="signup.css" media="screen"/>
+
+</head>
+<body background="background.png">
+	<div>
+		<nav class="navbar navbar-inverse" style="background-color:white;padding-top: 0px;border:0px">
+			<div class="container-fluid">
+			    <ul class="nav navbar-nav">
+			      <li><a href="home.html" style ="color:black"><span class="glyphicon glyphicon-home"></span></span> Home</a></li>
+			 	  <li><a href="itemlist.html" style ="color:black"><span class="glyphicon glyphicon-tag"></span></span> Item list</a></li>
+			      <li><a href="instock.html" style ="color:black"><span class="glyphicon glyphicon-gift"></span></span> Items in stock</a></li>
+			      <li><a href="pickup.html" style ="color:black"><span class="glyphicon glyphicon-shopping-cart"></span></span> Pickup Locations</a></li>
+			    </ul>
+			    <form class="navbar-form navbar-left" action="/action_page.php">
+			      <div class="input-group">
+			        <input type="text" class="form-control" placeholder="Search" name="search">
+			        <div class="input-group-btn">
+			          <button id="search1" class="btn btn-default" type="submit" style="height: 34px">
+			            <i class="glyphicon glyphicon-search"></i>
+			          </button>
+			        </div>
+			       </div>
+			    </form>
+			    <ul class="nav navbar-nav navbar-right" style="padding-right: 11px">
+	          	  <li><a href="about.html" style ="color:black"><span class="glyphicon glyphicon-info-sign"></span> About </a></li>
+			      <li><a href="signup.html" style ="color:black"><span class="glyphicon glyphicon-user"></span> Sign Up </a></li>
+			      <li><a href="login.html" style ="color:black"><span class="glyphicon glyphicon-log-in"></span> Login </a></li>
+			    </ul>
+			</div>
+		</nav>
+	<div class="box" style="margin-top:90px;background-color:#F5F5F5;height: 440px" >
+		<h3 style="margin-left: 120px;margin-top: 10px;margin-bottom: 20px"> Create a New Account </h3>
+		<form action="register" method="post">
+			<h4.5 style="margin-left: 53px"> Email </h4.5>
+			<input type="username" style="margin-top:0px;margin-bottom: 10px"id="email" name="email" required>
+			<h4.5 style="margin-left: 53px"> Username </h4.5>
+			<input type="username" style="margin-top:0px;margin-bottom: 10px"id="user" name="uname" required>
+			<h4.5 style="margin-left: 53px"> Password </h4.5>
+			<input type="username" style="margin-top:0px;margin-bottom: 15px"id="pass" name="psw" required>
+			<br>
+			<h4.5 style="margin-left: 69px;margin-top:10px;margin-right: 53px"> By clicking join now, you agree to Ken's User Agreement</h4.5>
+			<br>
+			<h4.5 style="margin-left: 184px;margin-top:10px;vertical-align: center">and Privacy Policy</h4.5>
+			<button id="login" type="submit" style="margin-left: 53px;margin-top:0px
+			margin-bottom: 20px">Join Now!</button>
+			<h4.3 style="margin-left: 138px;margin-top:10px;margin-right: 53px"> Already have an account? <a href="login.html"> Sign In </a></h4.3>
+		</form>
+
+	</div>
